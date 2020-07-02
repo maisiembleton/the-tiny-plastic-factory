@@ -10,6 +10,7 @@ import sharesies from "../../imgs/partners/sharesies.png";
 import springload from "../../imgs/partners/springload.png";
 import sustrust from "../../imgs/partners/sus-trust.png";
 import wellyapoth from "../../imgs/partners/wellington-apothecary.png";
+import retrogrove from "../../imgs/partners/retrogrove.png";
 
 //TODO add retrogrove
 
@@ -54,6 +55,11 @@ const partnersimgs = [
     img: springload,
     alt: "springload",
     link: "https://www.springload.co.nz/",
+  },
+  {
+    img: retrogrove,
+    alt: "retrogrove",
+    link: "https://goo.gl/maps/T9yUGWgdZZsTRDee6",
   },
 ];
 

@@ -11,8 +11,9 @@ import PartnersSection from "./sections/Partners/Partners";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App" id="top">
       <NavigationBar />
+
       <img src={coverImg} className="cover-img" alt="cover-img" />
       <AboutSection />
       <CollectionsSection />

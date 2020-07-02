@@ -7,13 +7,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .cover-img {
-  width: 100vw;
+  margin-right: -1200px;
   max-width: 1200px;
-  margin-top: 4em;
-
+  margin-top: 4.75em;
+  min-height: 200px;
+  transform: translatex(-50%);
   @media (min-width: 768px) {
     margin-top: 5.5em;
   }
@@ -29,6 +31,7 @@
   height: 300px;
   margin-bottom: 60px;
   color: white;
+  margin-top: 4em;
 }
 
 a {

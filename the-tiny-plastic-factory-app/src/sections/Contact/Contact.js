@@ -1,23 +1,8 @@
 import React from "react";
 import ContentBlock from "../../components/ContentBlock/ContentBlock";
 import strings from "../../en-NZ";
-import ImagesBlock from "../../components/ImagesBlock/ImagesBlock";
-import facebook from "../../imgs/facebook.svg";
-import instagram from "../../imgs/instagram.svg";
+import SocialsBlock from "../../components/SocialsBlock/SocialsBlock";
 import "./styles.scss";
-
-const socialLinks = [
-  {
-    img: facebook,
-    alt: "facebook",
-    link: "http://facebook.com/thetinyplasticfactory/",
-  },
-  {
-    img: instagram,
-    alt: "instagram",
-    link: "https://instagram.com/the.tiny.plastic.factory/",
-  },
-];
 
 const contactcontent = [
   strings.Contact.content.ForBusiness,
@@ -32,8 +17,7 @@ const ContactSection = () => {
         subtitle={strings.Contact.subtitle}
         content={contactcontent}
       />
-
-      <ImagesBlock imgs={socialLinks} withLinks={true} id="socials" />
+      <SocialsBlock />
     </div>
   );
 };
