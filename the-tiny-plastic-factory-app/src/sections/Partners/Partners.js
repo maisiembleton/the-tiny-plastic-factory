@@ -1,7 +1,6 @@
 import React from "react";
-import ContentImageBlock from "../../components/ContentImageBlock/ContentImageBlock";
+import ContentBlock from "../../components/ContentBlock/ContentBlock";
 import strings from "../../en-NZ";
-import recycledPlastic from "../../imgs/recycled-plastic.png";
 //TODO import sponsors imgs
 //TODO put them in an array with alt-text
 //TODO pop them in an imgblock
@@ -12,7 +11,9 @@ import recycledPlastic from "../../imgs/recycled-plastic.png";
 //   { img: pp, alt: "pp" },
 // ];
 
-const partnersContent = () => {};
+const partnersContent = [
+    {}
+];
 
 const PartnersSection = () => {
   return (
@@ -20,6 +21,7 @@ const PartnersSection = () => {
       id="about"
       title={strings.Partners.title}
       content={partnersContent}
+      withLinks={true}
     />
   );
 };
