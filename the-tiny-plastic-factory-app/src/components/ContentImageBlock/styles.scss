@@ -1,0 +1,41 @@
+.content-img-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 70vw;
+  align-items: center;
+  margin-bottom: 60px;
+
+  &-title {
+    color: white;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    &-p {
+      color: white;
+
+      @media (min-width: 768px) {
+        max-width: 40vw;
+      }
+
+      a {
+        color: white;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+  &-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
