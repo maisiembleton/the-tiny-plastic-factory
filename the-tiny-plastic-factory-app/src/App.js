@@ -7,6 +7,7 @@ import AboutSection from "./sections/About/About";
 import CollectionsSection from "./sections/Collections/Collections";
 import SalesSection from "./sections/Sales/Sales";
 import ContactSection from "./sections/Contact/Contact";
+import PartnersSection from "./sections/Partners/Partners";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <h2>Enough.</h2>
       </div>
       <ContactSection />
+      <PartnersSection />
     </div>
   );
 };

@@ -2,20 +2,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 70vw;
-  align-items: center;
-  margin-bottom: 40px;
+  margin-left: 1em;
+  margin-right: 1em;
+
+  @media (min-width: 768px) {
+    max-width: 70vw;
+  }
 
   &-title {
     color: white;
+    font-size: 2.2em;
+    line-height: 1.1;
+
+    h2 {
+      margin-bottom: 0.5em;
+    }
   }
 
   &-content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
 
     @media (min-width: 768px) {
       flex-direction: row;
+      align-items: flex-start;
     }
     &-format {
       display: flex;
@@ -28,18 +39,18 @@
       @media (min-width: 768px) {
         max-width: 40vw;
       }
-
-      a {
-        color: white;
-        border-bottom: 2px solid white;
-      }
     }
   }
   &-img {
     width: 250px;
     height: 250px;
     border-radius: 200px;
-    margin-top: 30px;
-    margin-left: 30px;
+
+    @media (min-width: 768px) {
+      margin-left: 4em;
+      width: 300px;
+      height: 300px;
+      margin-top: 2em;
+    }
   }
 }

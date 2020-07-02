@@ -26,9 +26,12 @@ export default {
         "We track the quantity and quality of all plastic we collect so can offer individualised plastic usage statistics, quality control feedback and impact reports for each business we work with.",
       // TODO fix this link
 
-      WantYour: `Want your plastic locally recycled? ${(
-        <a href="#contact">Get in touch</a>
-      )}`,
+      WantYour: (
+        <>
+          Want your plastic locally recycled?{" "}
+          <a href="#contact">Get in touch</a>
+        </>
+      ),
     },
   },
   Sales: {
@@ -41,9 +44,12 @@ export default {
       ForgetMinimum:
         "Forget minimum order quantities and import annoyances - we'll ship you any quantity of plastic feedstock, all proudly recycled here in NZ. We can help you replace or supplement your current plastic supply.",
       // TODO fix this link
-      WantTo: `Want to manufacture more sustainably? ${(
-        <a href="#contact">Get in touch</a>
-      )}`,
+      WantTo: (
+        <>
+          Want to manufacture more sustainably?{" "}
+          <a href="#contact">Get in touch</a>
+        </>
+      ),
     },
   },
   Contact: {
@@ -53,7 +59,13 @@ export default {
       ForBusiness:
         "For business inquiries, more information or a chat over coffee, flick us a line - we'd love to hear from you!",
       // TODO make this a link
-      Email: "thetinyplasticfactory@gmail.com",
+      Email: (
+        <>
+          <a href="mailto:thetinyplasticfactory@gmail.com">
+            thetinyplasticfactory@gmail.com
+          </a>
+        </>
+      ),
     },
   },
   Partners: {

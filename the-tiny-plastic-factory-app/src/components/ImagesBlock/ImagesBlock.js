@@ -1,19 +1,32 @@
 import React from "react";
 import "./styles.scss";
+import cn from "classnames";
 
-// TODO incorporate links
-const ImagesBlock = ({ imgs, withLinks }) => {
+const ImagesBlock = ({ imgs, withLinks, title, id, size }) => {
   return (
-    <div className="img-block">
-      {withLinks
-        ? imgs.map(({ img, alt, link }, i) => (
-            <a href={link}>
-              <img key={i} src={img} alt={alt} className="img-block-img" />
-            </a>
-          ))
-        : imgs.map(({ img, alt }, i) => (
-            <img key={i} src={img} alt={alt} className="img-block-img" />
-          ))}
+    <div id={id} className="img-block">
+      {title && <h2>{title}</h2>}
+      <div className={cn("img-block-content", `img-block-content-${size}`)}>
+        {withLinks
+          ? imgs.map(({ img, alt, link }, i) => (
+              <a href={link}>
+                <img
+                  key={i}
+                  src={img}
+                  alt={alt}
+                  className="img-block-content-img"
+                />
+              </a>
+            ))
+          : imgs.map(({ img, alt }, i) => (
+              <img
+                key={i}
+                src={img}
+                alt={alt}
+                className="img-block-content-img"
+              />
+            ))}
+      </div>
     </div>
   );
 };

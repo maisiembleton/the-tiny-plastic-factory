@@ -1,28 +1,73 @@
 import React from "react";
-import ContentBlock from "../../components/ContentBlock/ContentBlock";
+import ImagesBlock from "../../components/ImagesBlock/ImagesBlock";
+import "./styles.scss";
 import strings from "../../en-NZ";
-//TODO import sponsors imgs
-//TODO put them in an array with alt-text
-//TODO pop them in an imgblock
+import BTFW from "../../imgs/partners/BTFW.png";
+import homehopper from "../../imgs/partners/home-hopper.png";
+import paperkite from "../../imgs/partners/paperkite.png";
+import remix from "../../imgs/partners/remix.png";
+import sharesies from "../../imgs/partners/sharesies.png";
+import springload from "../../imgs/partners/springload.png";
+import sustrust from "../../imgs/partners/sus-trust.png";
+import wellyapoth from "../../imgs/partners/wellington-apothecary.png";
 
-// const partnersimgs = [
-//   { img: hdpe, alt: "hdpe" },
-//   { img: ldpe, alt: "ldpe" },
-//   { img: pp, alt: "pp" },
-// ];
+//TODO add retrogrove
 
-const partnersContent = [
-    {}
+const partnersimgs = [
+  {
+    img: paperkite,
+    alt: "home-hopper",
+    link: "https://www.hopper.nz/",
+  },
+  {
+    img: remix,
+    alt: "remix-plastic",
+    link: "https://remixplastic.com/",
+  },
+
+  {
+    img: homehopper,
+    alt: "home-hopper",
+    link: "https://www.hopper.nz/",
+  },
+  {
+    img: sharesies,
+    alt: "sharesies",
+    link: "https://www.sharesies.nz/",
+  },
+  {
+    img: wellyapoth,
+    alt: "wellington-apothecary",
+    link: "http://www.wellingtonapothecary.co.nz/",
+  },
+  {
+    img: sustrust,
+    alt: "sustainability-trust",
+    link: "https://sustaintrust.org.nz/",
+  },
+  {
+    img: BTFW,
+    alt: "bread-tags-for-wheelchairs",
+    link: "https://breadtagsforwheelchairs.co.za/",
+  },
+  {
+    img: springload,
+    alt: "springload",
+    link: "https://www.springload.co.nz/",
+  },
 ];
 
 const PartnersSection = () => {
   return (
-    <ContentBlock
-      id="about"
-      title={strings.Partners.title}
-      content={partnersContent}
-      withLinks={true}
-    />
+    <div className="partners-section">
+      <ImagesBlock
+        id="partners"
+        title={strings.Partners.title}
+        imgs={partnersimgs}
+        withLinks={true}
+        size="large"
+      />
+    </div>
   );
 };
 

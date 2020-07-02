@@ -5,6 +5,7 @@ import smiling from "../../imgs/smiling.png";
 import hdpe from "../../imgs/hdpe2.png";
 import ldpe from "../../imgs/ldpe4.png";
 import pp from "../../imgs/pp5.png";
+import "./styles.scss";
 
 const topCollectionsContent = [
   strings.Collections.content.WeCollectUsed,
@@ -26,15 +27,16 @@ const collectionsimgs = [
 
 const CollectionsSection = () => {
   return (
-    <ContentImageBlock
-      id="collections"
-      title={strings.Collections.title}
-      topcontent={topCollectionsContent}
-      bottomcontent={bottomCollectionsContent}
-      img={smiling}
-      imgalt="shaking-hands-smiling"
-      imgblock={collectionsimgs}
-    />
+    <div id="collections" className="collections-section">
+      <ContentImageBlock
+        title={strings.Collections.title}
+        topcontent={topCollectionsContent}
+        bottomcontent={bottomCollectionsContent}
+        img={smiling}
+        imgalt="shaking-hands-smiling"
+        imgblock={collectionsimgs}
+      />
+    </div>
   );
 };
 

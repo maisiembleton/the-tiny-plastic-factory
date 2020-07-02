@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
 .App {
-  background-color: #02a650;
+  background-color: #028843;
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -10,7 +12,11 @@
 .cover-img {
   width: 100vw;
   max-width: 1200px;
-  margin-bottom: 60px;
+  margin-top: 4em;
+
+  @media (min-width: 768px) {
+    margin-top: 5.5em;
+  }
 }
 
 .image-with-text-overlay {
@@ -23,4 +29,26 @@
   height: 300px;
   margin-bottom: 60px;
   color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #ffbc42;
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+  border-bottom: 0px solid rgba(255, 255, 255, 0);
+}
+
+a:hover {
+  border-bottom: 5px solid #ffbc42;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.4;
+  font-family: "Karla", sans-serif;
 }

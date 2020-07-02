@@ -16,7 +16,11 @@ const ContentBlock = ({ id, title, subtitle, content }) => {
         </div>
       )}
 
-      <div>{content}</div>
+      <div className="content-block-content">
+        {content.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </div>
     </div>
   );
 };

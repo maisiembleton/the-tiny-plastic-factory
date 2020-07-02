@@ -2,6 +2,7 @@ import React from "react";
 import ContentImageBlock from "../../components/ContentImageBlock/ContentImageBlock";
 import strings from "../../en-NZ";
 import recycledPlastic from "../../imgs/recycled-plastic.png";
+import "./styles.scss";
 
 const aboutContent = [
   strings.About.content.TheTiny,
@@ -11,13 +12,14 @@ const aboutContent = [
 
 const AboutSection = () => {
   return (
-    <ContentImageBlock
-      id="about"
-      title={strings.About.title}
-      topcontent={aboutContent}
-      img={recycledPlastic}
-      imgalt="recycled-plastic"
-    />
+    <div className="about-section" id="about">
+      <ContentImageBlock
+        title={strings.About.title}
+        topcontent={aboutContent}
+        img={recycledPlastic}
+        imgalt="recycled-plastic"
+      />
+    </div>
   );
 };
 

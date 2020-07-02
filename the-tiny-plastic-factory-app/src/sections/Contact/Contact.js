@@ -2,30 +2,39 @@ import React from "react";
 import ContentBlock from "../../components/ContentBlock/ContentBlock";
 import strings from "../../en-NZ";
 import ImagesBlock from "../../components/ImagesBlock/ImagesBlock";
+import facebook from "../../imgs/facebook.svg";
+import instagram from "../../imgs/instagram.svg";
+import "./styles.scss";
 
-//TODO: icons
-// const socialLinks = [
-//     {img:}
-// ]
+const socialLinks = [
+  {
+    img: facebook,
+    alt: "facebook",
+    link: "http://facebook.com/thetinyplasticfactory/",
+  },
+  {
+    img: instagram,
+    alt: "instagram",
+    link: "https://instagram.com/the.tiny.plastic.factory/",
+  },
+];
+
+const contactcontent = [
+  strings.Contact.content.ForBusiness,
+  strings.Contact.content.Email,
+];
 
 const ContactSection = () => {
-  //   const contactcontent = () => {
-  //     return (
-  //       <div className="contact-content">
-  //         <p>{strings.Contact.content.ForBusiness}</p>
-  //         <p>{strings.Contact.content.Email}</p>
-  //         {/* <ImagesBlock /> */}
-  //       </div>
-  //     );
-  //   };
-
   return (
-    <ContentBlock
-      id="contact"
-      title={strings.Contact.title}
-      subtitle={strings.Contact.subtitle}
-      //   content={contactcontent}
-    />
+    <div className="contact-section" id="contact">
+      <ContentBlock
+        title={strings.Contact.title}
+        subtitle={strings.Contact.subtitle}
+        content={contactcontent}
+      />
+
+      <ImagesBlock imgs={socialLinks} withLinks={true} id="socials" />
+    </div>
   );
 };
 
