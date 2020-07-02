@@ -9,15 +9,16 @@ const aboutContent = [
   strings.About.content.UsingSmall,
 ];
 
-const About = () => {
+const AboutSection = () => {
   return (
     <ContentImageBlock
+      id="about"
       title={strings.About.title}
-      content={aboutContent}
+      topcontent={aboutContent}
       img={recycledPlastic}
       imgalt="recycled-plastic"
     />
   );
 };
 
-export default About;
+export default AboutSection;

@@ -11,7 +11,7 @@ export default {
         "Using small scale infrastructure and by operating locally, we ensure 100% of the plastic we process is recycled without compromise. With a fully integrated supply chain, we're able to implement a high standard of quality control within our recycling processes and the recycled plastic feedstock we produce.",
     },
   },
-  Collection: {
+  Collections: {
     title: "We come to you.",
     content: {
       WeCollectUsed:
@@ -24,6 +24,8 @@ export default {
         "This typically represents around 80% of used plastic businesses dispose of. Find the symbols for these below:",
       WeTrack:
         "We track the quantity and quality of all plastic we collect so can offer individualised plastic usage statistics, quality control feedback and impact reports for each business we work with.",
+      // TODO fix this link
+
       WantYour: `Want your plastic locally recycled? ${(
         <a href="#contact">Get in touch</a>
       )}`,
@@ -38,9 +40,23 @@ export default {
         "Rough flakes or uniform granulate, we can supply your plastic feedstock in the form you need. We can currently supply polyethylene (high and low density) and polypropylene, all in a range of colours.",
       ForgetMinimum:
         "Forget minimum order quantities and import annoyances - we'll ship you any quantity of plastic feedstock, all proudly recycled here in NZ. We can help you replace or supplement your current plastic supply.",
+      // TODO fix this link
       WantTo: `Want to manufacture more sustainably? ${(
         <a href="#contact">Get in touch</a>
       )}`,
     },
+  },
+  Contact: {
+    title: "The Tiny Plastic Factory",
+    subtitle: "Plastic recycling, reinvented.",
+    content: {
+      ForBusiness:
+        "For business inquiries, more information or a chat over coffee, flick us a line - we'd love to hear from you!",
+      // TODO make this a link
+      Email: "thetinyplasticfactory@gmail.com",
+    },
+  },
+  Partners: {
+    title: "Our current collection partners:",
   },
 };

@@ -8,7 +8,7 @@ const NavigationBar = () => {
       <a className="nav-link" href="#about">
         About
       </a>
-      <a className="nav-link" href="#collection">
+      <a className="nav-link" href="#collections">
         Collection
       </a>
       <a className="nav-link" href="#sales">

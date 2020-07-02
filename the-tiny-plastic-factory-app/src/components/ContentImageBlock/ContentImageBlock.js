@@ -1,20 +1,38 @@
 import React from "react";
 import "./styles.scss";
-// take in a string array and map to paragraphs
-//take in an image
-//take in a title string
+import ImageBlock from "../ImagesBlock/ImagesBlock";
 
-const ContentImageBlock = ({ title, content, img, imgalt }) => {
+const ContentImageBlock = ({
+  id,
+  title,
+  topcontent,
+  bottomcontent,
+  img,
+  imgalt,
+  imgblock,
+}) => {
   return (
-    <div className="content-img-block">
+    <div className="content-img-block" id={id}>
       <div className="content-img-block-title">
         <h2>{title}</h2>
       </div>
       <div className="content-img-block-content">
-        <div className="content-img-block-content-p">
-          {content.map((paragraph) => (
-            <p>{paragraph}</p>
-          ))}
+        <div className="content-img-block-content-format">
+          <div className="content-img-block-content-p">
+            {topcontent.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+
+          {imgblock && <ImageBlock imgs={imgblock} />}
+
+          {bottomcontent && (
+            <div className="content-img-block-content-p">
+              {bottomcontent.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          )}
         </div>
         <div>
           <img src={img} className="content-img-block-img" alt={imgalt} />

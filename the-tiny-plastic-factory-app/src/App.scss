@@ -9,6 +9,18 @@
 
 .cover-img {
   width: 100vw;
-  max-width: 1000px;
+  max-width: 1200px;
   margin-bottom: 60px;
+}
+
+.image-with-text-overlay {
+  background-image: url("./imgs/trucks.png");
+  width: 100vw;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-bottom: 60px;
+  color: white;
 }
